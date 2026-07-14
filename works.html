@@ -1,559 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>works</title>
-	<link rel="icon" href="Logos/Galleria.png" type="image/x-icon" />
-
-    <!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Bootstrap  -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galleria | Works</title>
+	<link rel="icon" href="Logos/Galleria.png" type="image/x-icon">
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!-- Theme style  -->
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-    <!--Navigation bar-->
-    <div id="page">
-	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-xs-2">
-					<div id="gtco-logo"><a href="works.html">Galleria</a></div>
+	<div id="page">
+		<nav class="gtco-nav" role="navigation" aria-label="Main navigation">
+			<div class="gtco-container nav-shell">
+				<div class="nav-actions" aria-hidden="true">
+					<span class="icon-button"><span class="icon icon-menu"><span></span></span></span>
+					<span class="icon-button"><span class="icon icon-search"></span></span>
 				</div>
-				<div class="col-xs-10 text-right menu-1">
+				<div id="gtco-logo"><a href="index.html">Galleria</a></div>
+				<div class="menu-1 profile-chip">
 					<ul>
 						<li class="active"><a href="works.html">Works</a></li>
 						<li><a href="artist.html">Artist</a></li>
 						<li><a href="overview.html">Overview</a></li>
 					</ul>
+					<img src="images/artist2.jpg" alt="">
+					<span>Hiholiwe Immanuel</span>
 				</div>
 			</div>
-			
-		</div>
-	</nav>
-    <!--END of Navigation bar-->
+		</nav>
 
-    <!--Header -->
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/cover19.png);">
-		<div class="overlay"></div>
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Hiholiwe MM Immanuel</h1>
-						</div>
+		<main class="museum-layout">
+			<aside class="side-rail" aria-label="Collection filters">
+				<section class="side-section">
+					<h2>Search for items</h2>
+					<input class="search-input" id="artSearch" type="search" placeholder="Search collection" aria-label="Search artworks">
+				</section>
+
+				<section class="side-section">
+					<div class="filter-heading">Classifications</div>
+					<input class="filter-input" type="text" placeholder="Filter Classifications" aria-label="Filter classifications">
+					<div class="filter-list" aria-label="Artwork classifications">
+						<label><input type="checkbox" name="classification" value="portrait"> Portraits <span>(8)</span></label>
+						<label><input type="checkbox" name="classification" value="abstract"> Abstract Works <span>(5)</span></label>
+						<label><input type="checkbox" name="classification" value="digital"> Digital Studies <span>(6)</span></label>
+						<label><input type="checkbox" name="classification" value="mythic"> Mythic Scenes <span>(3)</span></label>
 					</div>
+					<button class="clear-filter" type="button" id="clearFilters">Clear Selection</button>
+				</section>
+
+				<section class="side-section"><a class="rail-link" href="#featured">Featured Works</a></section>
+				<section class="side-section"><a class="rail-link" href="artist.html">Artist Profile</a></section>
+				<section class="side-section"><a class="rail-link" href="overview.html">Resources</a></section>
+				<section class="side-section"><a class="rail-link" href="#tones">Colors</a></section>
+				<section class="side-section"><a class="rail-link" href="#medium">Medium</a></section>
+			</aside>
+
+			<section class="collection-main">
+				<div class="collection-heading">
+					<h1>Showing <span id="visibleCount">22</span> results for '<span id="queryLabel">all works</span>'</h1>
+					<span class="result-count">Digital archive / Hiholiwe MM Immanuel</span>
+				</div>
+
+				<div class="gallery-grid" id="galleryGrid">
+					<article class="art-card" data-title="Threshold Figure" data-classification="portrait digital">
+						<button type="button" class="art-trigger"><img src="images/cover2.jpg" alt="Threshold Figure"><h2>Threshold Figure</h2><p>Digital painting, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Ember Crown" data-classification="portrait mythic">
+						<button type="button" class="art-trigger"><img src="images/cover.jpg" alt="Ember Crown"><h2>Ember Crown</h2><p>Portrait study, 2022</p></button>
+					</article>
+					<article class="art-card" data-title="Garden of Static" data-classification="abstract digital">
+						<button type="button" class="art-trigger"><img src="images/cover11.jpg" alt="Garden of Static"><h2>Garden of Static</h2><p>Digital composition, 2021</p></button>
+					</article>
+					<article class="art-card" data-title="Nocturne in Gold" data-classification="mythic abstract">
+						<button type="button" class="art-trigger"><img src="images/cover14.jpg" alt="Nocturne in Gold"><h2>Nocturne in Gold</h2><p>Mythic scene, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Soft Voltage" data-classification="digital abstract">
+						<button type="button" class="art-trigger"><img src="images/cover4.jpg" alt="Soft Voltage"><h2>Soft Voltage</h2><p>Digital study, 2020</p></button>
+					</article>
+					<article class="art-card" data-title="Half Light" data-classification="portrait">
+						<button type="button" class="art-trigger"><img src="images/cover5.jpg" alt="Half Light"><h2>Half Light</h2><p>Portrait, 2021</p></button>
+					</article>
+					<article class="art-card" data-title="The Witness" data-classification="portrait mythic">
+						<button type="button" class="art-trigger"><img src="images/cover6.jpg" alt="The Witness"><h2>The Witness</h2><p>Character study, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Signal Bloom" data-classification="abstract digital">
+						<button type="button" class="art-trigger"><img src="images/cover7.jpg" alt="Signal Bloom"><h2>Signal Bloom</h2><p>Digital painting, 2022</p></button>
+					</article>
+					<article class="art-card" data-title="Afterimage" data-classification="abstract">
+						<button type="button" class="art-trigger"><img src="images/cover8.jpg" alt="Afterimage"><h2>Afterimage</h2><p>Abstract work, 2021</p></button>
+					</article>
+					<article class="art-card" data-title="Amber Silence" data-classification="digital">
+						<button type="button" class="art-trigger"><img src="images/cover9.jpg" alt="Amber Silence"><h2>Amber Silence</h2><p>Digital archive, 2022</p></button>
+					</article>
+					<article class="art-card" data-title="Oracle Study" data-classification="portrait mythic">
+						<button type="button" class="art-trigger"><img src="images/cover10.jpg" alt="Oracle Study"><h2>Oracle Study</h2><p>Portrait study, 2020</p></button>
+					</article>
+					<article class="art-card" data-title="Blue Remnant" data-classification="digital abstract">
+						<button type="button" class="art-trigger"><img src="images/cover3.jpg" alt="Blue Remnant"><h2>Blue Remnant</h2><p>Digital painting, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Quiet Procession" data-classification="mythic">
+						<button type="button" class="art-trigger"><img src="images/cover12.jpg" alt="Quiet Procession"><h2>Quiet Procession</h2><p>Mythic scene, 2021</p></button>
+					</article>
+					<article class="art-card" data-title="Interior Weather" data-classification="abstract">
+						<button type="button" class="art-trigger"><img src="images/cover13.jpg" alt="Interior Weather"><h2>Interior Weather</h2><p>Abstract work, 2022</p></button>
+					</article>
+					<article class="art-card" data-title="The Artist Seated" data-classification="portrait">
+						<button type="button" class="art-trigger"><img src="images/cover15.jpg" alt="The Artist Seated"><h2>The Artist Seated</h2><p>Portrait, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Fevered Icon" data-classification="portrait digital">
+						<button type="button" class="art-trigger"><img src="images/cover16.jpg" alt="Fevered Icon"><h2>Fevered Icon</h2><p>Digital icon, 2021</p></button>
+					</article>
+					<article class="art-card" data-title="Night Study" data-classification="digital">
+						<button type="button" class="art-trigger"><img src="images/cover17.jpg" alt="Night Study"><h2>Night Study</h2><p>Digital study, 2020</p></button>
+					</article>
+					<article class="art-card" data-title="Red Memory" data-classification="abstract digital">
+						<button type="button" class="art-trigger"><img src="images/cover18.jpg" alt="Red Memory"><h2>Red Memory</h2><p>Digital composition, 2022</p></button>
+					</article>
+					<article class="art-card" data-title="Spirit Hall" data-classification="mythic abstract">
+						<button type="button" class="art-trigger"><img src="images/cover19.png" alt="Spirit Hall"><h2>Spirit Hall</h2><p>Large format digital work, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Twin Flame" data-classification="portrait">
+						<button type="button" class="art-trigger"><img src="images/cover20.png" alt="Twin Flame"><h2>Twin Flame</h2><p>Portrait study, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Portal Bloom" data-classification="digital abstract">
+						<button type="button" class="art-trigger"><img src="images/cover21.png" alt="Portal Bloom"><h2>Portal Bloom</h2><p>Digital painting, 2023</p></button>
+					</article>
+					<article class="art-card" data-title="Moonlit Figure" data-classification="portrait digital">
+						<button type="button" class="art-trigger"><img src="images/cover22.png" alt="Moonlit Figure"><h2>Moonlit Figure</h2><p>Digital portrait, 2023</p></button>
+					</article>
+				</div>
+			</section>
+		</main>
+
+		<footer id="gtco-footer" role="contentinfo">
+			<div class="museum-container footer-shell">
+				<div>
+					<small>&copy; 2026 Abisai Sem. All Rights Reserved.</small><br>
+					<small>Designed by <a href="https://github.com/Sai42021" target="_blank" rel="noreferrer">AbisaiSem</a></small>
+				</div>
+				<div class="social-links">
+					<a href="https://www.instagram.com/sunflowerthug_4722/" target="_blank" rel="noreferrer"><img src="icons/instagram.png" alt="Instagram"></a>
+					<a href="https://wa.me/qr/H5ARASEKDD7II1" target="_blank" rel="noreferrer"><img src="icons/whatsapp.png" alt="WhatsApp"></a>
+					<a href="https://www.linkedin.com/mwlite/in/hiholiwe-immanuel-b0272a223" target="_blank" rel="noreferrer"><img src="icons/linkedin.png" alt="LinkedIn"></a>
 				</div>
 			</div>
+		</footer>
+	</div>
+
+	<div id="artModal" class="modal" role="dialog" aria-modal="true" aria-label="Artwork preview">
+		<button class="close" type="button" aria-label="Close preview">&times;</button>
+		<div>
+			<img class="modal-content" id="modalImage" alt="">
+			<div id="caption"></div>
 		</div>
-	</header>
-    <!--END of Header -->
+	</div>
 
-	<!-- Gallery-body begin -->
-	.
-	<section class="Gallery-body mt-4 mb-5">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="card-columns">
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover2.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-					
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img"
-								src="images/cover.jpg"
-								alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover11.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover14.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover4.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover5.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover6.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img"
-								src="images/cover7.jpg"
-								alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover8.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover9.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img"
-								src="images/cover10.jpg"
-								alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover3.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover12.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover13.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover15.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img"
-								src="images/cover16.jpg"
-								alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover17.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-	
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover18.jpg" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover19.png" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover20.png" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover21.png" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-
-					<div class="card card-pin">
-						<div class="photo">
-							<img class="myImg card-img" src="images/cover22.png" alt="Artist: HIHOLIWE MM IMMANUEL">
-						</div>
-
-						<!-- The Modal -->
-						<div id="myModal" class="modal">
-						
-							<!-- The Close Button -->
-							<span class="close">&times;</span>
-						
-							<!-- Modal Content (The Image) -->
-							<img class="modal-content" id="img01">
-						
-							<!-- Modal Caption (Image Text) -->
-							<div id="caption">Artist: HIHOLIWE MM IMMANUEL</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Gallery-body end -->
-
-	<footer id="gtco-footer" role="contentinfo">
-		<div class="gtco-container">
-			<div class="row copyright">
-				<div class="col-md-12">
-					<p class="pull-left">
-						<small class="block">&copy; 2023 Abisai Sem. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="https://github.com/Sai42021" target="_blank">AbisaiSem</a></small>
-					</p>
-					<p class="pull-right">
-						<ul class="gtco-social-icons pull-right">
-							<a href="https://www.instagram.com/sunflowerthug_4722/" target="_blank"><i class="instagram"></i><img src="icons/instagram.png"></a></li>
-              				<a href="https://wa.me/qr/H5ARASEKDD7II1" target="_blank"><i class="whatsapp" target="_blank"></i><img src="icons/whatsapp.png"></a></li>
-              				<a href="https://www.linkedin.com/mwlite/in/hiholiwe-immanuel-b0272a223" target="_blank"><i class="LinkedIn"></i><img src="icons/linkedin.png"></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</footer>
-
-	<!--Image pop up-->
-	<script>
-		// Get the modal
-		var modal = document.getElementById("myModal");
-		var modalImg = document.getElementById("img01"); // Assuming you want to use img01 for all images
-		var captionText = document.getElementById("caption");
-
-		// Get all images and insert them inside the modal - use its "alt" text as a caption
-		var imgs = document.querySelectorAll(".myImg");
-		imgs.forEach(function (img) {
-			img.onclick = function () {
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				captionText.innerHTML = this.alt;
-			}
-		});
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function () {
-			modal.style.display = "none";
-		}
-	</script>
-
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="js/galleria.js"></script>
 </body>
 </html>
